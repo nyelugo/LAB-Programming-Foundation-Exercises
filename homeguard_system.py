@@ -306,7 +306,20 @@ def run_simulation(system_mode="AWAY", iterations=5, seed=42):
 
 # =============================================================================
 # Step 7: TESTING -- run the simulator when this file is executed directly.
+# -----------------------------------------------------------------------------
+# We run the three test scenarios the lab asks for, one after another, so a
+# single run (or a double-click of run_homeguard.bat) demonstrates all of them.
+# Fixed seeds are chosen so each scenario reliably shows its target alerts.
 # =============================================================================
 if __name__ == "__main__":
-    # Security + Safety test: AWAY mode should surface security/safety alerts.
+    # --- Security Test: AWAY mode should surface security alerts + break-in. ---
+    print("\n########## SECURITY TEST (mode = AWAY) ##########")
     run_simulation(system_mode="AWAY", iterations=5, seed=42)
+
+    # --- Safety Test: smoke and temperature (frozen-pipe) alerts should fire. ---
+    print("\n########## SAFETY TEST (mode = SLEEP) ##########")
+    run_simulation(system_mode="SLEEP", iterations=5, seed=7)
+
+    # --- Comfort Test: HOME mode should surface a comfort notification. ---
+    print("\n########## COMFORT TEST (mode = HOME) ##########")
+    run_simulation(system_mode="HOME", iterations=6, seed=0)

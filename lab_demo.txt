@@ -1,0 +1,153 @@
+Starting HomeGuard Security System...
+
+
+########## SECURITY TEST (mode = AWAY) ##########
+=== HomeGuard Security System ===
+Mode: AWAY
+
+Time: 14:30:00
+[READING] Living Room Motion: No activity
+[READING] Front Door: OPENED
+[READING] Kitchen Temperature: 67°F (Normal)
+[READING] Bedroom Smoke: CLEAR
+[ALERT!] 🚨 HIGH: SECURITY: Front Door opened while in AWAY mode!
+[LOG] [14:30:00] SECURITY alert sent to homeowner...
+
+Time: 14:31:00
+[READING] Living Room Motion: MOTION DETECTED
+[READING] Front Door: OPENED
+[READING] Kitchen Temperature: 78°F (Mild)
+[READING] Bedroom Smoke: CLEAR
+[ALERT!] 🚨 HIGH: SECURITY: Motion detected in Living Room while in AWAY mode!
+[LOG] [14:31:00] SECURITY alert sent to homeowner...
+[ALERT!] 🚨 HIGH: SECURITY: Front Door opened while in AWAY mode!
+[LOG] [14:31:00] SECURITY alert sent to homeowner...
+[ALERT!] 🚨 HIGH: SECURITY: Multiple sensors triggered at once - possible break-in!
+[LOG] [14:31:00] SECURITY alert sent to homeowner...
+
+Time: 14:32:00
+[READING] Living Room Motion: MOTION DETECTED
+[READING] Front Door: OPENED
+[READING] Kitchen Temperature: 60°F (Mild)
+[READING] Bedroom Smoke: CLEAR
+[ALERT!] 🚨 HIGH: SECURITY: Motion detected in Living Room while in AWAY mode!
+[LOG] [14:32:00] SECURITY alert sent to homeowner...
+[ALERT!] 🚨 HIGH: SECURITY: Front Door opened while in AWAY mode!
+[LOG] [14:32:00] SECURITY alert sent to homeowner...
+[ALERT!] 🚨 HIGH: SECURITY: Multiple sensors triggered at once - possible break-in!
+[LOG] [14:32:00] SECURITY alert sent to homeowner...
+
+Time: 14:33:00
+[READING] Living Room Motion: No activity
+[READING] Front Door: OPENED
+[READING] Kitchen Temperature: 74°F (Normal)
+[READING] Bedroom Smoke: CLEAR
+[ALERT!] 🚨 HIGH: SECURITY: Front Door opened while in AWAY mode!
+[LOG] [14:33:00] SECURITY alert sent to homeowner...
+
+Time: 14:34:00
+[READING] Living Room Motion: No activity
+[READING] Front Door: CLOSED
+[READING] Kitchen Temperature: 73°F (Normal)
+[READING] Bedroom Smoke: CLEAR
+
+=== Simulation complete: 8 event(s) logged ===
+
+########## SAFETY TEST (mode = SLEEP) ##########
+=== HomeGuard Security System ===
+Mode: SLEEP
+
+Time: 14:30:00
+[READING] Living Room Motion: No activity
+[READING] Front Door: OPENED
+[READING] Kitchen Temperature: 62°F (Mild)
+[READING] Bedroom Smoke: CLEAR
+[ALERT!] 🚨 HIGH: SECURITY: Front Door opened while in SLEEP mode!
+[LOG] [14:30:00] SECURITY alert sent to homeowner...
+
+Time: 14:31:00
+[READING] Living Room Motion: MOTION DETECTED
+[READING] Front Door: OPENED
+[READING] Kitchen Temperature: 66°F (Normal)
+[READING] Bedroom Smoke: SMOKE DETECTED
+[ALERT!] 🚨 HIGH: SECURITY: Motion detected in Living Room while in SLEEP mode!
+[LOG] [14:31:00] SECURITY alert sent to homeowner...
+[ALERT!] 🚨 HIGH: SECURITY: Front Door opened while in SLEEP mode!
+[LOG] [14:31:00] SECURITY alert sent to homeowner...
+[ALERT!] 🚨 HIGH: SAFETY: Bedroom smoke detected - fire risk!
+[LOG] [14:31:00] SAFETY alert sent to homeowner...
+
+Time: 14:32:00
+[READING] Living Room Motion: No activity
+[READING] Front Door: CLOSED
+[READING] Kitchen Temperature: 31°F (LOW)
+[READING] Bedroom Smoke: CLEAR
+[ALERT!] 🚨 HIGH: SAFETY: Kitchen temperature 31°F - frozen pipe risk!
+[LOG] [14:32:00] SAFETY alert sent to homeowner...
+
+Time: 14:33:00
+[READING] Living Room Motion: No activity
+[READING] Front Door: CLOSED
+[READING] Kitchen Temperature: 32°F (LOW)
+[READING] Bedroom Smoke: CLEAR
+[ALERT!] 🚨 HIGH: SAFETY: Kitchen temperature 32°F - frozen pipe risk!
+[LOG] [14:33:00] SAFETY alert sent to homeowner...
+
+Time: 14:34:00
+[READING] Living Room Motion: MOTION DETECTED
+[READING] Front Door: CLOSED
+[READING] Kitchen Temperature: 64°F (Mild)
+[READING] Bedroom Smoke: CLEAR
+[ALERT!] 🚨 HIGH: SECURITY: Motion detected in Living Room while in SLEEP mode!
+[LOG] [14:34:00] SECURITY alert sent to homeowner...
+
+=== Simulation complete: 7 event(s) logged ===
+
+########## COMFORT TEST (mode = HOME) ##########
+=== HomeGuard Security System ===
+Mode: HOME
+
+Time: 14:30:00
+[READING] Living Room Motion: No activity
+[READING] Front Door: CLOSED
+[READING] Kitchen Temperature: 68°F (Normal)
+[READING] Bedroom Smoke: CLEAR
+
+Time: 14:31:00
+[READING] Living Room Motion: No activity
+[READING] Front Door: CLOSED
+[READING] Kitchen Temperature: 75°F (Normal)
+[READING] Bedroom Smoke: CLEAR
+
+Time: 14:32:00
+[READING] Living Room Motion: No activity
+[READING] Front Door: CLOSED
+[READING] Kitchen Temperature: 97°F (HIGH)
+[READING] Bedroom Smoke: CLEAR
+[ALERT!] 🚨 HIGH: SAFETY: Kitchen temperature 97°F - equipment failure risk!
+[LOG] [14:32:00] SAFETY alert sent to homeowner...
+
+Time: 14:33:00
+[READING] Living Room Motion: No activity
+[READING] Front Door: CLOSED
+[READING] Kitchen Temperature: 64°F (Mild)
+[READING] Bedroom Smoke: CLEAR
+[ALERT!] ℹ️ LOW: COMFORT: Kitchen temperature 64°F is outside the comfort range (65-75°F).
+[LOG] [14:33:00] COMFORT alert sent to homeowner...
+
+Time: 14:34:00
+[READING] Living Room Motion: No activity
+[READING] Front Door: CLOSED
+[READING] Kitchen Temperature: 75°F (Normal)
+[READING] Bedroom Smoke: CLEAR
+
+Time: 14:35:00
+[READING] Living Room Motion: No activity
+[READING] Front Door: CLOSED
+[READING] Kitchen Temperature: 66°F (Normal)
+[READING] Bedroom Smoke: CLEAR
+
+=== Simulation complete: 2 event(s) logged ===
+
+
+Simulation finished. Press any key to close this window...
