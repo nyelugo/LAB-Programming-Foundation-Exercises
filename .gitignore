@@ -1,0 +1,6 @@
+# Private notes -- for my eyes only, never pushed to GitHub
+_private/
+
+# Python build artifacts
+__pycache__/
+*.pyc
